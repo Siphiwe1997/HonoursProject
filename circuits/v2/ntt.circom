@@ -1,7 +1,9 @@
 pragma circom 2.0.0;
 
 include "mod.circom";
-include "util.circom";   
+include "util.circom"; 
+
+// based on: https://github.com/zkFHE/circomlib-fhe/blob/main/circuits/ntt.circom
 
 template NTT(order, primeMod, rootList) {
     signal input inputs[order];
