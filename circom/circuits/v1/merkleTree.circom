@@ -2,7 +2,7 @@ pragma circom 2.0.0;
 
 include "node_modules/circomlib/circuits/poseidon.circom";
 
-// MerkleTree template with additional level outputs
+
 template MerkleTree(depth) {
     signal input leaves[2**depth];         // Input leaves for the tree
     signal output root;                    // Merkle tree root
