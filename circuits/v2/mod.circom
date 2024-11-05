@@ -3,6 +3,8 @@ pragma circom 2.0.0;
 include "msb.circom";
 include "util.circom";
 
+// bases on: https://github.com/zkFHE/circomlib-fhe/blob/main/circuits/mod.circom
+
 template Mod(q) {
     signal input in;  // Input value to reduce mod q
     signal output out;  // Output value reduced mod q
